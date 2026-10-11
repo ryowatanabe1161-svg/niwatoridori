@@ -1,0 +1,97 @@
+{
+ "date": "2026-10-11T09:13:31.246Z",
+ "note": "勝率 = 試合に勝った割合（基本: 最後の負け1人にならない / 発展: 最高得点（同点は按分） / デュエル: 勝利）。各レベル1席 vs 残り全員の対戦相手レベル。",
+ "ultraBudget": 200,
+ "modes": {
+  "basic": {
+   "players": 4,
+   "fair": 0.75,
+   "vsNormal": {
+    "weak": {
+     "games": 200,
+     "win": 0.1
+    },
+    "normal": {
+     "games": 200,
+     "win": 0.77
+    },
+    "strong": {
+     "games": 200,
+     "win": 0.86
+    },
+    "ultra": {
+     "games": 4,
+     "win": 1
+    }
+   },
+   "ultraVsStrong": {
+    "games": 4,
+    "win": 1
+   },
+   "strongVsWeak": {
+    "games": 200,
+    "win": 1
+   }
+  },
+  "adv": {
+   "players": 4,
+   "fair": 0.25,
+   "vsNormal": {
+    "weak": {
+     "games": 200,
+     "win": 0.018
+    },
+    "normal": {
+     "games": 200,
+     "win": 0.243
+    },
+    "strong": {
+     "games": 200,
+     "win": 0.31
+    },
+    "ultra": {
+     "games": 4,
+     "win": 0.5
+    }
+   },
+   "ultraVsStrong": {
+    "games": 4,
+    "win": 0.375
+   },
+   "strongVsWeak": {
+    "games": 200,
+    "win": 0.833
+   }
+  },
+  "duel": {
+   "players": 2,
+   "fair": 0.5,
+   "vsNormal": {
+    "weak": {
+     "games": 200,
+     "win": 0.305
+    },
+    "normal": {
+     "games": 200,
+     "win": 0.435
+    },
+    "strong": {
+     "games": 200,
+     "win": 0.53
+    },
+    "ultra": {
+     "games": 4,
+     "win": 0.25
+    }
+   },
+   "ultraVsStrong": {
+    "games": 4,
+    "win": 0.5
+   },
+   "strongVsWeak": {
+    "games": 200,
+    "win": 0.815
+   }
+  }
+ }
+}

@@ -1,0 +1,6 @@
+screenshots/
+research/
+*.log
+*.out
+node_modules/
+.DS_Store
