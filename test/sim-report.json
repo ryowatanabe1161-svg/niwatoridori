@@ -1,36 +1,36 @@
 {
- "date": "2026-10-11T09:13:31.246Z",
+ "date": "2026-10-11T09:14:01.808Z",
  "note": "勝率 = 試合に勝った割合（基本: 最後の負け1人にならない / 発展: 最高得点（同点は按分） / デュエル: 勝利）。各レベル1席 vs 残り全員の対戦相手レベル。",
- "ultraBudget": 200,
+ "ultraBudget": 800,
  "modes": {
   "basic": {
    "players": 4,
    "fair": 0.75,
    "vsNormal": {
     "weak": {
-     "games": 200,
-     "win": 0.1
+     "games": 1000,
+     "win": 0.103
     },
     "normal": {
-     "games": 200,
-     "win": 0.77
+     "games": 1000,
+     "win": 0.746
     },
     "strong": {
-     "games": 200,
-     "win": 0.86
+     "games": 1000,
+     "win": 0.796
     },
     "ultra": {
-     "games": 4,
-     "win": 1
+     "games": 100,
+     "win": 0.93
     }
    },
    "ultraVsStrong": {
-    "games": 4,
-    "win": 1
+    "games": 100,
+    "win": 0.88
    },
    "strongVsWeak": {
-    "games": 200,
-    "win": 1
+    "games": 1000,
+    "win": 0.996
    }
   },
   "adv": {
@@ -38,29 +38,29 @@
    "fair": 0.25,
    "vsNormal": {
     "weak": {
-     "games": 200,
-     "win": 0.018
+     "games": 1000,
+     "win": 0.012
     },
     "normal": {
-     "games": 200,
-     "win": 0.243
+     "games": 1000,
+     "win": 0.238
     },
     "strong": {
-     "games": 200,
-     "win": 0.31
+     "games": 1000,
+     "win": 0.278
     },
     "ultra": {
-     "games": 4,
-     "win": 0.5
+     "games": 100,
+     "win": 0.403
     }
    },
    "ultraVsStrong": {
-    "games": 4,
-    "win": 0.375
+    "games": 100,
+    "win": 0.36
    },
    "strongVsWeak": {
-    "games": 200,
-    "win": 0.833
+    "games": 1000,
+    "win": 0.851
    }
   },
   "duel": {
@@ -68,29 +68,29 @@
    "fair": 0.5,
    "vsNormal": {
     "weak": {
-     "games": 200,
-     "win": 0.305
+     "games": 1000,
+     "win": 0.264
     },
     "normal": {
-     "games": 200,
-     "win": 0.435
+     "games": 1000,
+     "win": 0.47
     },
     "strong": {
-     "games": 200,
-     "win": 0.53
+     "games": 1000,
+     "win": 0.533
     },
     "ultra": {
-     "games": 4,
-     "win": 0.25
+     "games": 100,
+     "win": 0.76
     }
    },
    "ultraVsStrong": {
-    "games": 4,
-    "win": 0.5
+    "games": 100,
+    "win": 0.6
    },
    "strongVsWeak": {
-    "games": 200,
-    "win": 0.815
+    "games": 1000,
+    "win": 0.802
    }
   }
  }
