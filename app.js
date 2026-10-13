@@ -163,3 +163,17 @@ setInterval(function () {
   var a = opts[0]; act('play', { i: a.i, n: a.n, f: a.f });
 }, TURBO ? 80 : 450);
 renderTitle();
+
+// ---- ひろばの「みんなの部屋」：同じメンバーで自動入室＋ホストは「つぎのゲーム」 ----
+if (PARTY) {
+  FuuParty.init({ game: 'niwatoridori',
+    isHost: function () { return !!host && !host.room.solo; },
+    inGame: function () { var R = host && host.room; return !!R && ['lobby', 'end', 'over', 'result'].indexOf(R.phase) < 0 && !(R.G && (R.G.over || R.G.phase === 'end' || R.G.phase === 'over')); },
+    broadcast: function (m) { if (host) Object.keys(host.conns).forEach(function (cid) { try { host.conns[cid].send(m); } catch (e) {} }); } });
+  FuuParty.status = function () { return host ? { host: 1, n: Object.keys(host.conns).filter(function (k) { return host.conns[k].open; }).length } : { host: 0, joined: !!(client && client.everJoined) }; };
+  $('nameIn').value = cleanName(PARTY.name) || 'ななし';
+  setTimeout(function () {
+    if (PARTY.host) { store(LS_HOST, null); startHost(cleanName(PARTY.name) || 'ホスト', null, false); }
+    else startClient(PARTY.code, cleanName(PARTY.name) || 'ななし');
+  }, 50);
+}
